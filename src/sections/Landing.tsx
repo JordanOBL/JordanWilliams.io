@@ -61,7 +61,7 @@ const Landing = ({ fullName }: { fullName: { [key: string]: string } }) => {
                 <img alt='portrait of Jordan' width={'500px'} src={Portrait} />
             </div>
             <div className='flex flex-col p-2 items-center'>
-                <h1 className='text-white text-5xl lg:text-6xl tracking-normal lg:mb-3'>
+                <h1 className='text-white text-4xl md:text-5xl lg:text-6xl tracking-normal lg:mb-3'>
                     {fullName.first + ' ' + fullName.last}
                 </h1>
                 <h2 className='text-3xl md:text-4xl lg:text-5xl text-teal-200 tracking-tight'>

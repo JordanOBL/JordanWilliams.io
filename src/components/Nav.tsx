@@ -23,7 +23,7 @@ const Nav = ({ setScroll }: Props) => {
     };
     return (
         <div className='w-screen px-15 flex bg-slate-800 border-b-2 border-white justify-between items-center sticky top-0 z-20'>
-            <h1 className='w-full text-teal-50 text-4xl py-3 px-[3rem]'>
+            <h1 className='w-full text-teal-50 text-3xl md:text-4xl py-3 px-[3rem]'>
                 Jordan W.
             </h1>
 
