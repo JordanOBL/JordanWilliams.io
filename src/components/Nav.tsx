@@ -39,9 +39,9 @@ const Nav = ({ setScroll }: Props) => {
                         className='text-white text-4xl cursor-pointer absolute right-10 top-5'
                     />
                     <div>
-                        <h2 className='py-8 border-white/50  '>My Work.</h2>
-                        <h2 className='  border-white/50 py-8'>About Me.</h2>
-                        <h2 className='py-8'>Contact Me.</h2>
+                        <h2 className='py-8 border-white/50  '><a href='#WORK'>My Work.</a></h2>
+                        <h2 className=' border-white/50 py-8'><a href='#About'>About Me.</a></h2>
+                        <h2 className='py-8'><a href='#CONTACT'>Contact Me.</a></h2>
                     </div>
                     <div>
                         <div className='flex flex-col items-center'>
@@ -86,13 +86,13 @@ const Nav = ({ setScroll }: Props) => {
 
             <ul className='hidden curspr-pointer lg:flex bg-slate-800 w-[800px] text-center justify-evenly text-white text-xl font-medium items-center'>
                 <li className='text-center hover:text-teal-400 p-2'>
-                    <a href='#WORK.'>Work</a>
+                    <a href='#WORK'>Work</a>
                 </li>
                 <li className='text-center hover:text-teal-400 p-2'>
-                    <a href='#ABOUT ME.'>About</a>
+                    <a href='#ABOUT'>About</a>
                 </li>
                 <li className='text-center  hover:text-teal-400 p-2'>
-                    <a href='#CONTACT.'>Contact</a>
+                    <a href='#CONTACT'>Contact</a>
                 </li>
                 <li className='group relative p-2'>
                     <p className=' cursor-pointer text-center hover:text-teal-500 p-2'>

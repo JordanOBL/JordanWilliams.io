@@ -25,11 +25,11 @@ function App() {
         <main className='bg-slate-50'>
             <Nav setScroll={setScroll} />
             <Landing fullName={fullName} />
-            <SectionTitle title={'WORK.'} />
+            <SectionTitle title={'WORK'} />
             <Portfolio setScroll={setScroll} />
-            <SectionTitle title={'ABOUT ME.'} />
+            <SectionTitle title={'ABOUT'} />
             <About />
-            <SectionTitle title={'CONTACT ME.'} />
+            <SectionTitle title={'CONTACT'} />
             <Contact />
         </main>
     );
