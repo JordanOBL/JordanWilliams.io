@@ -1,11 +1,11 @@
 import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.png';
 import radiqlImg2 from '/Radiql/Images/about1.png';
 import radiqlImg3 from '/Radiql/Images/readme-logo.png';
-import radiqlImg4 from '/Radiql/Images/1-1.gif';
-import radiqlImg5 from '/Radiql/Images/1-2.gif';
-import radiqlImg6 from '/Radiql/Images/1-3.gif';
-import radiqlImg7 from '/Radiql/Images/2-1.gif';
-import radiqlImg8 from '/Radiql/Images/2-2.gif';
+import radiqlVid1 from '/Radiql/Videos/Radiql1-1.webm';
+import radiqlVid2 from '/Radiql/Videos/Radiql1-2.webm';
+import radiqlVid3 from '/Radiql/Videos/Radiql1-3.webm';
+import radiqlVid4 from '/Radiql/Videos/Radiql1-4.webm';
+import radiqlVid5 from '/Radiql/Videos/Radiql1-5.webm';
 import tDImg1 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.png';
 import tDImg2 from '/TwinsDimension/Images/Screen Shot 2023-03-19 at 2.03.05 AM.png';
 import tDImg3 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.49.49 PM.png';
@@ -46,11 +46,11 @@ export const projectData: Project[] = [
         ],
         article: 'http://www.medium.com/radiql',
         media: [
-            radiqlImg4,
-            radiqlImg5,
-            radiqlImg6,
-            radiqlImg7,
-            radiqlImg8,
+            radiqlVid1,
+            radiqlVid2,
+            radiqlVid3,
+            radiqlVid4,
+            radiqlVid5,
             radiqlImg1,
             radiqlImg2,
             radiqlImg3,
