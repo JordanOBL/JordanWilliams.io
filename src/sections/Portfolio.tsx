@@ -77,7 +77,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                 }
                             />
                         </div>
-                        <div className=' my-10 md:hidden'>
+                        <div className=' flex place-content-center my-10 md:hidden'>
                             {project
                                 .media![0].split('.')
                                 .includes('webm' || 'mp4') ? (
