@@ -38,12 +38,18 @@ const Nav = ({ setScroll }: Props) => {
                         onClick={() => handleCloseMenu()}
                         className='text-white text-4xl cursor-pointer absolute right-10 top-5'
                     />
-                    <div>
-                        <h2 className='py-8 border-white/50  '><a href='#WORK'>My Work.</a></h2>
-                        <h2 className=' border-white/50 py-8'><a href='#About'>About Me.</a></h2>
-                        <h2 className='py-8'><a href='#CONTACT'>Contact Me.</a></h2>
+                    <div onClick={() => handleCloseMenu}>
+                        <h2 className='py-8 border-white/50  '>
+                            <a href='#WORK'>My Work.</a>
+                        </h2>
+                        <h2 className=' border-white/50 py-8'>
+                            <a href='#About'>About Me.</a>
+                        </h2>
+                        <h2 className='py-8'>
+                            <a href='#CONTACT'>Contact Me.</a>
+                        </h2>
                     </div>
-                    <div>
+                    <div onClick={() => handleCloseMenu()}>
                         <div className='flex flex-col items-center'>
                             {' '}
                             <a
