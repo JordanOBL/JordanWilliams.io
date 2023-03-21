@@ -22,7 +22,7 @@ const Nav = ({ setScroll }: Props) => {
         setScroll((prev: boolean) => !prev);
     };
     return (
-        <div className='w-screen px-15 flex bg-slate-800 border-b-2 border-white justify-between items-center sticky top-0 z-20'>
+        <div className='w-screen px-15 lg:px-[5rem] flex bg-slate-800 border-b-2 border-white justify-between items-center sticky top-0 z-20'>
             <h1 className='w-full text-teal-50 text-3xl md:text-4xl py-3 px-[3rem]'>
                 Jordan W.
             </h1>
@@ -121,7 +121,7 @@ const Nav = ({ setScroll }: Props) => {
                         </li>
                     </ul>
                 </li>
-                <li>
+                <li className='p-2'>
                     <a
                         href='https://www.linkedin.com/in/jwilliams116'
                         target='_blank'
@@ -129,7 +129,7 @@ const Nav = ({ setScroll }: Props) => {
                         <SiLinkedin className='text-blue-500 text-2xl' />
                     </a>
                 </li>
-                <li>
+                <li className='p-2'>
                     <a href='https://www.github.com/JordanOBL' target='_blank'>
                         <SiGithub className='text-orange-900 text-2xl' />
                     </a>
