@@ -57,7 +57,7 @@ const About = () => {
     }, [noun, deleteType]);
     return (
         <div className='flex flex-col items-center bg-slate-50'>
-            <div className=' m-auto mt-[6rem] project-shadow rounded-full w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-[url(../../public/portrait.jpeg)] bg-cover'></div>
+            <div className=' m-auto mt-[6rem] project-shadow rounded-full w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-[url(../../public/portrait.webp)] bg-cover'></div>
             <article className='text-center text-slate-800 text-xl md:text-2xl mt-8 font-bold px-12 md:px-18 lg:px-28 tracking-wide  leading-loose md:leading-[3rem] lg:leading-[3.5rem] '>
                 <h2 className=' md:px-12 lg:px-28'>
                     Hey! I'm Jordan, Fullstack Engineer & <br></br>{' '}
