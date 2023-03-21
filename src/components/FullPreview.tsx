@@ -1,4 +1,4 @@
-import { CgClose } from 'react-icons/cg';
+
 interface Props {
     fullPreviewSource: string;
 

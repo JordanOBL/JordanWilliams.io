@@ -5,7 +5,7 @@ import ProjectThumbnails from '../components/ProjectThumbnails';
 
 import radiqlVid1 from '../../public/Radiql/Videos/Radiql1-1.webm';
 
-import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.png';
+import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.webp';
 import TechIcons from '../components/TechIcons';
 interface Props {
     setScroll: React.Dispatch<React.SetStateAction<boolean>>;

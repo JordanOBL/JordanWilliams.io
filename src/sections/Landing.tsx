@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Portrait from '../../public/portrait.jpeg';
+import Portrait from '../../public/portrait.webp';
 import { nounList } from '../utils/ProjectData';
 
 import ContactButton from '../components/ContactButton';

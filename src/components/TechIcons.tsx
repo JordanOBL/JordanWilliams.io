@@ -9,8 +9,6 @@ import {
     SiStripe,
     SiPaypal,
     SiSass,
-    SiGithub,
-    SiTsnode,
     SiNodedotjs,
     SiExpress,
     SiGraphql,
