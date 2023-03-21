@@ -61,17 +61,16 @@ const About = () => {
             <article className='text-center text-slate-800 text-xl md:text-2xl mt-8 font-bold px-12 md:px-18 lg:px-28 tracking-wide  leading-loose md:leading-[3rem] lg:leading-[3.5rem] '>
                 <h2 className=' md:px-12 lg:px-28'>
                     Hey! I'm Jordan, Fullstack Engineer & <br></br>{' '}
-                    <span className='text-teal-400'>{noun} </span>
+                    <span className='text-teal-500'>{noun} </span>
                     <br></br>
-                    with a passion for building scalable and performant web
-                    applications. In my recent talks, I shared my knowledge of
-                    testing tools and frameworks. In my free time, I enjoy
+                    with a passion for building clean, scalable, and performant web
+                    applications. In my free time, I enjoy
                     staying up to date with the latest developments in the tech
                     industry and debugging my way through the backcountry by
                     board, feet, or wheels!
                 </h2>
             </article>
-            <div className='w-screen flex flex-col items-center justify-center bg-slate-800/5 h-fit p-4 my-8'>
+            <div className='w-screen flex flex-col items-center justify-center bg-slate-800 h-fit p-4 my-8'>
                 <a
                     href={ResumePDF}
                     target='_blank'
@@ -79,10 +78,10 @@ const About = () => {
                     className='flex items-center'
                 >
                     <button
-                        className={`flex rounded-full px-8 py-4 bg-teal-500 project-shadow hover:project-shadow-hover hover:bg-teal-400 cursor-pointer text-white text-lg font-medium my-2`}
+                        className={`flex rounded-full px-8 py-4 bg-transparent project-shadow hover:project-shadow-hover hover:bg-teal-300 hover:text-slate-800 cursor-pointer text-teal-300 text-lg font-medium my-2 border-2 border-teal-300`}
                     >
                         <FaEye className='hidden md:block md:text-2xl mr-2' />{' '}
-                        View Resume (PDF)
+                        View Full Resume (PDF)
                     </button>
                 </a>
                 <a
@@ -92,10 +91,10 @@ const About = () => {
                     className='flex items-center'
                 >
                     <button
-                        className={`flex rounded-full px-8 py-4 bg-teal-500 project-shadow hover:project-shadow-hover hover:bg-teal-400 cursor-pointer text-white text-lg font-medium my-2`}
+                        className={`flex rounded-full px-8 py-4 bg-transparent project-shadow hover:project-shadow-hover hover:bg-teal-300 hover:text-slate-800 cursor-pointer text-teal-300 border-2 border-teal-300 text-lg font-medium my-2`}
                     >
                         <FaFileDownload className='hidden md:block md:text-2xl mr-2' />{' '}
-                        Download Resume (PDF)
+                        Download Full Resume (PDF)
                     </button>
                 </a>
             </div>

@@ -33,29 +33,40 @@ const Nav = ({ setScroll }: Props) => {
                     className=' lg:hidden text-white text-4xl cursor-pointer mr-[3rem]'
                 />
             ) : (
-                <ul className='border-2 border-white absolute flex w-screen h-screen top-0 text-white font-bold justify-center text-4xl bg-slate-800/95 flex-col items-center text-center'>
+                <div className='border-2 border-white absolute flex w-screen h-screen top-0 text-white font-bold  text-4xl bg-slate-800 flex-col items-center text-center'>
                     <CgClose
                         onClick={() => handleCloseMenu()}
-                        className='text-white text-4xl cursor-pointer absolute right-10 top-5'
+                        className='text-white text-5xl cursor-pointer absolute font-bold right-10 top-10'
                     />
-                    <li className='py-8 border-b-2 border-white/50  '>
-                        My Work.
-                    </li>
-                    <li className='border-b-2  border-white/50 py-8'>
-                        About Me.
-                    </li>
-                    <li className='py-8 border-b-2 border-white/50 '>
-                        Contact Me.
-                    </li>
-                    <li className='py-8 mt-10'>
-                        <DownloadResumeButton
-                            bg='bg-teal-500'
-                            fontSize='medium'
-                            textSize='text-xl'
-                        />
-                    </li>
-                    <li>
-                        <div className='flex px-8 p-4 my-4 w-fit justify-evenly'>
+                    <div className='absolute top-[12rem]'>
+                        <h2 className='py-8 border-white/50  '>My Work.</h2>
+                        <h2 className='  border-white/50 py-8'>About Me.</h2>
+                        <h2 className='py-8'>Contact Me.</h2>
+                    </div>
+                    <div className='absolute bottom-10'>
+                        <div className='flex flex-col items-center'>
+                            {' '}
+                            <a
+                                href={ResumePDF}
+                                target='_blank'
+                                rel='noreferrer'
+                                className='flex items-center'
+                            >
+                                <button
+                                    className={`flex rounded-full px-8 py-4 bg-transparent project-shadow border-2 border-teal-500 cursor-pointer text-white text-lg font-medium my-2`}
+                                >
+                                    <FaEye className='hidden md:block md:text-2xl mr-2' />{' '}
+                                    View Resume (PDF)
+                                </button>
+                            </a>
+                            <DownloadResumeButton
+                                bg='bg-transparent'
+                                fontSize='medium'
+                                textSize='text-lg md:text-xl'
+                                border='border-2 border-teal-500'
+                            />
+                        </div>
+                        <div className='flex px-8 p-4 my-4 w-screen justify-center'>
                             <a
                                 href='https://www.github.com/JordanOBL'
                                 target='_blank'
@@ -69,8 +80,8 @@ const Nav = ({ setScroll }: Props) => {
                                 <SiLinkedin className='text-blue-400/75 text-4xl md:text-5xl mx-2' />
                             </a>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             )}
 
             <ul className='hidden curspr-pointer lg:flex bg-slate-800 w-[800px] text-center justify-evenly text-white text-xl font-medium items-center'>

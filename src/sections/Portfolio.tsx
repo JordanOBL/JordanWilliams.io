@@ -72,7 +72,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                 />
                             </div>
                             <div className='flex flex-wrap w-full place-content-center my-2 lg:my-12 text-2xl lg:text-3xl '>
-                                <button className=' p-4 lg:px-6'>
+                                <button className=' p-4 px-6'>
                                     <a
                                         href={project.github}
                                         target='_blank'
@@ -81,7 +81,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                         GitHub
                                     </a>
                                 </button>
-                                <button className='p-4 lg:px-6'>
+                                <button className='py-4 px-6'>
                                     <a
                                         href={project.website}
                                         target='_blank'
@@ -91,7 +91,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                     </a>
                                 </button>
                                 {project.article && (
-                                    <button className='p-4 lg:px-6'>
+                                    <button className='p-4 px-6'>
                                         <a
                                             href={project.article}
                                             target='_blank'
@@ -104,7 +104,7 @@ const Portfolio = ({ setScroll }: Props) => {
                             </div>
                         </article>
                         <div className='flex flex-col place-items-center '>
-                            <div className={`flex justify-center border-2 h-[300px] md:h-[400px] lg:h-[500px] w-fit ${index % 2 === 0 ? 'border-slate-800' : 'border-violet-200'}`}>
+                            <div className={`flex justify-center h-[300px] md:h-[400px] lg:h-[500px] w-fit p-4`}>
                                 <div className='flex justify-center items-center '>
                                     {source.split('/').includes('Videos') ? (
                                         <video
@@ -114,7 +114,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                     ) : (
                                         <img
                                             alt='expanded image'
-                                            className='max-h-[300px] md:max-h-[400px] lg:max-h-[500px] max-w-[100%] cursor-pointer'
+                                            className='h-[300px] md:h-[400px] lg:h-[500px] max-w-[100%] cursor-pointer'
                                             src={index === 0 ? source : source1}
                                             onClick={(e) =>
                                                 handlePreviewClick(e, index)

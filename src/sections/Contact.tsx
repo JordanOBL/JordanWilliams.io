@@ -4,8 +4,8 @@ import { SiGithub, SiLinkedin } from 'react-icons/si';
 const Contact = () => {
     return (
         <div className='flex flex-col items-center min-h-screen justify-center p-8 md:p-12 bg-slate-800'>
-            <h2 className='text-white text-5xl text-center p-8 lg:mb-4 tracking-normal leading-[4rem]'>
-                THAT'S IT! <br></br> CREATIVE IDEA? <br></br>NOW IT'S YOUR TURN TO SAY HI!
+            <h2 className='text-white text-4xl lg:text-5xl text-center p-8 lg:mb-4 tracking-normal leading-[4rem]'>
+                THAT'S IT!<br></br>NOW IT'S YOUR TURN TO SAY HI!
             </h2>
             <ContactButton
                 bg='bg-teal-500'
