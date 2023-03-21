@@ -1,22 +1,22 @@
-import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.png';
-import radiqlImg2 from '/Radiql/Images/about1.png';
-import radiqlImg3 from '/Radiql/Images/readme-logo.png';
+import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.webp';
+import radiqlImg2 from '/Radiql/Images/about1.webp';
+import radiqlImg3 from '/Radiql/Images/readme-logo.webp';
 import radiqlVid1 from '/Radiql/Videos/Radiql1-1.webm';
 import radiqlVid2 from '/Radiql/Videos/Radiql1-2.webm';
 import radiqlVid3 from '/Radiql/Videos/Radiql1-3.webm';
 import radiqlVid4 from '/Radiql/Videos/Radiql1-4.webm';
 import radiqlVid5 from '/Radiql/Videos/Radiql1-5.webm';
-import tDImg1 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.png';
-import tDImg2 from '/TwinsDimension/Images/Screen Shot 2023-03-19 at 2.03.05 AM.png';
-import tDImg3 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.49.49 PM.png';
-import tDImg4 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.50.15 PM.png';
-import tDImg5 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.52.21 PM.png';
-import tDImg6 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.52.42 PM.png';
-import tDImg7 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.53.39 PM.png';
-import tDImg8 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.53.52 PM.png';
-import tDImg9 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.54.09 PM.png';
-import tDImg10 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 8.55.02 PM.png';
-import tDImg11 from '/TwinsDimension/Images/Screen Shot 2023-03-19 at 2.04.07 AM.png';
+import tDImg1 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.webp';
+import tDImg2 from '/TwinsDimension/Images/Screen Shot 2023-03-19 at 2.03.05 AM.webp';
+import tDImg3 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.49.49 PM.webp';
+import tDImg4 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.50.15 PM.webp';
+import tDImg5 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.52.21 PM.webp';
+import tDImg6 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.52.42 PM.webp';
+import tDImg7 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.53.39 PM.webp';
+import tDImg8 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.53.52 PM.webp';
+import tDImg9 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.54.09 PM.webp';
+import tDImg10 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 8.55.02 PM.webp';
+import tDImg11 from '/TwinsDimension/Images/Screen Shot 2023-03-19 at 2.04.07 AM.webp';
 
 export interface Project {
     title: string;
