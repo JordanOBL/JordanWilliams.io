@@ -72,7 +72,7 @@ const Landing = ({ fullName }: { fullName: { [key: string]: string } }) => {
                     <div className='animate-[cursorBlink_1s_steps(2)_infinite] bg-red-600 bg-opacity-100 w-2 md:w-4 h-6 md:h-8 font-bold'></div>{' '}
                 </h3>
             </div>
-            <ContactButton bg={'bg-teal-500'} textSize='text-md md:text-lg'/>
+            <ContactButton bg={'bg-teal-400'} textSize='text-md md:text-lg tracking-wide'/>
 
             {/* <div className='flex justify-center mt-[60px]'>
                 <TbArrowBigDownLinesFilled className='text-5xl md:text-6xl text-teal-200 animate-bounce' />

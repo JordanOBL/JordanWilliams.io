@@ -23,7 +23,7 @@ const ContactButton = ({ bg, textSize }: Props) => {
 
     return (
         <button
-            className={`rounded-full px-8 py-4 ${bg} project-shadow hover:project-shadow-hover hover:bg-teal-400 cursor-pointer text-white ${textSize} font-medium tracking-wider`}
+            className={`rounded-full px-8 py-4 ${bg} project-shadow hover:project-shadow-hover hover:bg-teal-400 cursor-pointer text-slate-800 ${textSize} font-medium tracking-wide`}
             onClick={handleEmailClick}
         >
             {myEmail}

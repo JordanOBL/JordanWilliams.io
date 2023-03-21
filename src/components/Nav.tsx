@@ -66,7 +66,7 @@ const Nav = ({ setScroll }: Props) => {
                                 border='border-2 border-teal-500'
                             />
                         </div>
-                        <div className='flex px-8 p-4 my-4 w-screen justify-evenly'>
+                        <div className='flex px-8 p-4 my-4 w-screen justify-center'>
                             <a
                                 href='https://www.github.com/JordanOBL'
                                 target='_blank'
