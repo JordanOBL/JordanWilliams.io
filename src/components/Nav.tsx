@@ -33,17 +33,17 @@ const Nav = ({ setScroll }: Props) => {
                     className=' lg:hidden text-white text-4xl cursor-pointer mr-[3rem]'
                 />
             ) : (
-                <div className='border-2 border-white absolute flex w-screen h-screen top-0 text-white font-bold  text-4xl bg-slate-800 flex-col items-center text-center'>
+                <div className='border-2 border-white absolute flex w-screen h-screen top-0 text-white font-bold justify-center text-4xl bg-slate-800 flex-col items-center text-center'>
                     <CgClose
                         onClick={() => handleCloseMenu()}
-                        className='text-white text-5xl cursor-pointer absolute font-bold right-10 top-10'
+                        className='text-white text-4xl cursor-pointer absolute right-10 top-5'
                     />
-                    <div className='absolute top-[12rem]'>
+                    <div>
                         <h2 className='py-8 border-white/50  '>My Work.</h2>
                         <h2 className='  border-white/50 py-8'>About Me.</h2>
                         <h2 className='py-8'>Contact Me.</h2>
                     </div>
-                    <div className='absolute bottom-10'>
+                    <div>
                         <div className='flex flex-col items-center'>
                             {' '}
                             <a
@@ -66,7 +66,7 @@ const Nav = ({ setScroll }: Props) => {
                                 border='border-2 border-teal-500'
                             />
                         </div>
-                        <div className='flex px-8 p-4 my-4 w-screen justify-center'>
+                        <div className='flex px-8 p-4 my-4 w-screen justify-evenly'>
                             <a
                                 href='https://www.github.com/JordanOBL'
                                 target='_blank'

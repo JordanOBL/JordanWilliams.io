@@ -68,34 +68,34 @@ const Portfolio = ({ setScroll }: Props) => {
                             <div className='flex w-full justify-evenly my-6 px-6'>
                                 <TechIcons
                                     techArray={project.technologies}
-                                    fontSize={'lg:text-4xl text-2xl'}
+                                    fontSize={'text-2xl md:text-3xl lg:text-4xl font-bold '}
                                 />
                             </div>
-                            <div className='flex flex-wrap w-full place-content-center my-2 lg:my-12 text-2xl lg:text-3xl '>
-                                <button className=' p-4 px-6'>
-                                    <a
-                                        href={project.github}
-                                        target='_blank'
-                                        className='my-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-black w-[200px] px-2 py-2 rounded-2xl'
-                                    >
+                            <div className=' my-10 md:hidden'>
+                                <img
+                                    width={'400px'}
+                                    src={index === 0 ? source : source1}
+                                    onClick={(e) =>
+                                        handlePreviewClick(e, index)
+                                    }
+                                />
+                            </div>
+                            <div className='flex flex-col md:flex-row flex-wrap w-full place-content-center my-2 lg:my-12 text-2xl lg:text-3xl '>
+                                <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium w-[200px] md:w-fit px-6 py-2 rounded-2xl'>
+                                    <a href={project.github} target='_blank'>
                                         GitHub
                                     </a>
                                 </button>
-                                <button className='py-4 px-6'>
-                                    <a
-                                        href={project.website}
-                                        target='_blank'
-                                        className='my-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-black w-[200px] px-2 py-2 rounded-2xl'
-                                    >
+                                <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium w-[200px] md:w-fit px-6 py-2 rounded-2xl'>
+                                    <a href={project.website} target='_blank'>
                                         Website
                                     </a>
                                 </button>
                                 {project.article && (
-                                    <button className='p-4 px-6'>
+                                    <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium  w-[200px] md:w-fit px-6 py-2 rounded-2xl'>
                                         <a
                                             href={project.article}
                                             target='_blank'
-                                            className='my-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-black w-[200px] px-2 py-2 rounded-2xl'
                                         >
                                             Medium
                                         </a>
@@ -103,8 +103,11 @@ const Portfolio = ({ setScroll }: Props) => {
                                 )}
                             </div>
                         </article>
-                        <div className='flex flex-col place-items-center '>
-                            <div className={`flex justify-center h-[300px] md:h-[400px] lg:h-[500px] w-fit p-4`}>
+
+                        <div className='hidden md:flex flex-col place-items-center '>
+                            <div
+                                className={`flex justify-center h-[300px] md:h-[400px] lg:h-[500px] w-fit p-4`}
+                            >
                                 <div className='flex justify-center items-center '>
                                     {source.split('/').includes('Videos') ? (
                                         <video
