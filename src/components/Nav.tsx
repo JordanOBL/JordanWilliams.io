@@ -5,6 +5,8 @@ import { SiLinkedin, SiGithub } from 'react-icons/si';
 import { FaDownload, FaEye } from 'react-icons/fa';
 import DownloadResumeButton from './DownloadResumeButton';
 import ResumePDF from '/Resume.pdf';
+//react-scroll
+import * as Scroll from 'react-scroll';
 
 interface Props {
     setScroll: ({}: any) => void;
@@ -23,9 +25,19 @@ const Nav = ({ setScroll }: Props) => {
     };
     return (
         <div className='w-screen px-15 lg:px-[5rem] flex bg-slate-800 border-b-2 border-white justify-between items-center sticky top-0 z-20'>
-            <h1 className='w-full text-teal-50 text-3xl md:text-4xl py-3 px-[3rem]'>
-                Jordan W.
-            </h1>
+            <Scroll.Link
+                activeClass='active'
+                to='HOME.'
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1000}
+
+            >
+                <h1 className='w-full text-teal-50 text-3xl md:text-4xl py-3 px-[3rem] cursor-pointer'>
+                    Jordan W.
+                </h1>
+            </Scroll.Link>
 
             {openMenu === false ? (
                 <GiHamburgerMenu
@@ -38,16 +50,40 @@ const Nav = ({ setScroll }: Props) => {
                         onClick={() => handleCloseMenu()}
                         className='text-white text-4xl cursor-pointer absolute right-10 top-5'
                     />
-                    <div onClick={() => handleCloseMenu}>
-                        <h2 className='py-8 border-white/50  '>
-                            <a href='#WORK'>My Work.</a>
-                        </h2>
-                        <h2 className=' border-white/50 py-8'>
-                            <a href='#About'>About Me.</a>
-                        </h2>
-                        <h2 className='py-8'>
-                            <a href='#CONTACT'>Contact Me.</a>
-                        </h2>
+                    <div onClick={() => handleCloseMenu()}>
+                        <Scroll.Link
+                            activeClass='active'
+                            to='WORK.'
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={1000}
+                            onClick={() => handleCloseMenu()}
+                        >
+                            <h2 className='py-8 border-white/50  '>Work.</h2>{' '}
+                        </Scroll.Link>
+                        <Scroll.Link
+                            activeClass='active'
+                            to='ABOUT.'
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={1000}
+                            onClick={() => handleCloseMenu()}
+                        >
+                            <h2 className=' border-white/50 py-8'>About.</h2>
+                        </Scroll.Link>
+                        <Scroll.Link
+                            activeClass='active'
+                            to='CONTACT.'
+                            spy={true}
+                            smooth={true}
+                            offset={50}
+                            duration={1000}
+                            onClick={() => handleCloseMenu()}
+                        >
+                            <h2 className='py-8'>Contact.</h2>
+                        </Scroll.Link>
                     </div>
                     <div onClick={() => handleCloseMenu()}>
                         <div className='flex flex-col items-center'>
@@ -91,14 +127,41 @@ const Nav = ({ setScroll }: Props) => {
             )}
 
             <ul className='hidden curspr-pointer lg:flex bg-slate-800 w-[800px] text-center justify-evenly text-white text-xl font-medium items-center'>
-                <li className='text-center hover:text-teal-400 p-2'>
-                    <a href='#WORK'>Work</a>
+                <li className='text-center hover:text-teal-400 cursor-pointer p-2'>
+                    <Scroll.Link
+                        activeClass='active'
+                        to='WORK.'
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={1000}
+                    >
+                        Work
+                    </Scroll.Link>
                 </li>
-                <li className='text-center hover:text-teal-400 p-2'>
-                    <a href='#ABOUT'>About</a>
+                <li className='text-center hover:text-teal-400 cursor-pointer p-2'>
+                    <Scroll.Link
+                        activeClass='active'
+                        to='ABOUT.'
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={1000}
+                    >
+                        About
+                    </Scroll.Link>
                 </li>
-                <li className='text-center  hover:text-teal-400 p-2'>
-                    <a href='#CONTACT'>Contact</a>
+                <li className='text-center  hover:text-teal-400 cursor-pointer p-2'>
+                    <Scroll.Link
+                        activeClass='active'
+                        to='CONTACT.'
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={1000}
+                    >
+                        Contact
+                    </Scroll.Link>
                 </li>
                 <li className='group relative p-2'>
                     <p className=' cursor-pointer text-center hover:text-teal-500 p-2'>
