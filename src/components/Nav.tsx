@@ -32,7 +32,6 @@ const Nav = ({ setScroll }: Props) => {
                 smooth={true}
                 offset={0}
                 duration={1000}
-
             >
                 <h1 className='w-full text-teal-50 text-3xl md:text-4xl py-3 px-[3rem] cursor-pointer'>
                     Jordan W.
@@ -60,7 +59,9 @@ const Nav = ({ setScroll }: Props) => {
                             duration={1000}
                             onClick={() => handleCloseMenu()}
                         >
-                            <h2 className='py-8 border-white/50  '>Work.</h2>{' '}
+                            <h2 className='py-8 border-white/50 cursor-pointer '>
+                                Work.
+                            </h2>{' '}
                         </Scroll.Link>
                         <Scroll.Link
                             activeClass='active'
@@ -71,7 +72,9 @@ const Nav = ({ setScroll }: Props) => {
                             duration={1000}
                             onClick={() => handleCloseMenu()}
                         >
-                            <h2 className=' border-white/50 py-8'>About.</h2>
+                            <h2 className=' border-white/50 py-8 cursor-pointer'>
+                                About.
+                            </h2>
                         </Scroll.Link>
                         <Scroll.Link
                             activeClass='active'
@@ -82,7 +85,7 @@ const Nav = ({ setScroll }: Props) => {
                             duration={1000}
                             onClick={() => handleCloseMenu()}
                         >
-                            <h2 className='py-8'>Contact.</h2>
+                            <h2 className='py-8 cursor-pointer'>Contact.</h2>
                         </Scroll.Link>
                     </div>
                     <div onClick={() => handleCloseMenu()}>
