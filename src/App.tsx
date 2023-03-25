@@ -1,10 +1,14 @@
 import * as React from 'react';
+import * as Scroll from 'react-scroll';
 import Nav from './components/Nav';
 import About from './sections/About';
 import Landing from './sections/Landing';
 import Portfolio from './sections/Portfolio';
 import Contact from './sections/Contact';
 import SectionTitle from './components/SectionTitle';
+
+//react scroll elements
+const Element = Scroll.Element;
 
 //Name state
 const fullName = {
@@ -24,13 +28,22 @@ function App() {
     return (
         <main className='bg-slate-50'>
             <Nav setScroll={setScroll} />
-            <Landing fullName={fullName} />
-            <SectionTitle title={'WORK'} />
-            <Portfolio setScroll={setScroll} />
-            <SectionTitle title={'ABOUT'} />
-            <About />
-            <SectionTitle title={'CONTACT'} />
-            <Contact />
+            <Element name='HOME.'>
+                <Landing fullName={fullName} />
+            </Element>
+
+            <Element name='WORK.'>
+                <SectionTitle title={'WORK'} />
+                <Portfolio setScroll={setScroll} />
+            </Element>
+            <Element name='ABOUT.'>
+                <SectionTitle title={'ABOUT'} />
+                <About />
+            </Element>
+            <Element name='CONTACT.'>
+                <SectionTitle title={'CONTACT'} />
+                <Contact />
+            </Element>
         </main>
     );
 }
