@@ -2,7 +2,6 @@ import * as React from 'react';
 import ResumePDF from '/Resume.pdf';
 import { nounList } from '../utils/ProjectData';
 import { skills } from '../utils/ResumeData';
-
 import { FaEye, FaFileDownload } from 'react-icons/fa';
 
 const About = () => {

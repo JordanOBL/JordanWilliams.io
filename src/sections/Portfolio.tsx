@@ -3,6 +3,8 @@ import { projectData, Project } from '../utils/ProjectData';
 import FullPreview from '../components/FullPreview';
 import ProjectThumbnails from '../components/ProjectThumbnails';
 import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.webp';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.webp'
@@ -89,9 +91,10 @@ const Portfolio = ({ setScroll }: Props) => {
                                     />
                                 </video>
                             ) : (
-                                <img
+                                <LazyLoadImage
                                     width={'400px'}
-                                    src={index === 0 ? source : source1}
+                                        src={index === 0 ? source : source1}
+                                        effect="blur"
                                     onClick={(e) =>
                                         handlePreviewClick(e, index)
                                     }
@@ -163,10 +166,11 @@ const Portfolio = ({ setScroll }: Props) => {
                                             />
                                         </video>
                                     ) : (
-                                        <img
+                                        <LazyLoadImage
                                             alt='expanded image'
                                             className='h-[300px] md:h-[400px] lg:h-[500px] max-w-[100%] cursor-pointer'
-                                            src={source}
+                                                src={source}
+                                                effect="blur"
                                             onClick={(e) =>
                                                 handlePreviewClick(e, index)
                                             }
@@ -195,10 +199,11 @@ const Portfolio = ({ setScroll }: Props) => {
                                         />
                                     </video>
                                 ) : (
-                                    <img
+                                    <LazyLoadImage
                                         alt='expanded image'
                                         className='h-[300px] md:h-[400px] lg:h-[500px] max-w-[100%] cursor-pointer'
-                                        src={source1}
+                                                src={source1}
+                                                effect="blur"
                                         onClick={(e) =>
                                             handlePreviewClick(e, index)
                                         }
