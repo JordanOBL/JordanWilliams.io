@@ -102,18 +102,30 @@ const Portfolio = ({ setScroll }: Props) => {
                         </div>
                         <div className='flex flex-col md:flex-row flex-wrap w-full place-content-center my-2 lg:my-12 text-2xl lg:text-3xl '>
                             <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium w-[200px] md:w-fit px-6 py-2 rounded-2xl'>
-                                <a href={project.github} target='_blank'>
+                                <a
+                                    href={project.github}
+                                    target='_blank'
+                                    aria-label='Click here to vist this projects Github Repository'
+                                >
                                     GitHub
                                 </a>
                             </button>
                             <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium w-[200px] md:w-fit px-6 py-2 rounded-2xl'>
-                                <a href={project.website} target='_blank'>
+                                <a
+                                    href={project.website}
+                                    target='_blank'
+                                    aria-label='Click here to vist this projects website'
+                                >
                                     Website
                                 </a>
                             </button>
                             {project.article && (
                                 <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium  w-[200px] md:w-fit px-6 py-2 rounded-2xl'>
-                                    <a href={project.article} target='_blank'>
+                                    <a
+                                        href={project.article}
+                                        target='_blank'
+                                        aria-label='Click here to visit this projects article on Medium.com'
+                                    >
                                         Medium
                                     </a>
                                 </button>

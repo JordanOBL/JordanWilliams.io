@@ -7,7 +7,7 @@ interface Props {
 }
 const DownloadResumeButton = ({ bg, textSize, fontSize, border }: Props) => {
     return (
-        <a href={ResumePDF} download='Jordan Williams Resume' target='_blank'>
+        <a href={ResumePDF} download='Jordan Williams Resume' target='_blank' aria-label="Click here to download Jordan Williams' Resume">
             <button
                 className={`rounded-full px-8 py-4 ${bg} project-shadow hover:project-shadow-hover hover:bg-teal-400 cursor-pointer text-white ${textSize} font-${fontSize} ${border}`}
             >

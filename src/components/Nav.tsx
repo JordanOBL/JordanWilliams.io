@@ -96,6 +96,7 @@ const Nav = ({ setScroll }: Props) => {
                                 target='_blank'
                                 rel='noreferrer'
                                 className='flex items-center'
+                                aria-label='Click here to view Jordans resume as PDF'
                             >
                                 <button
                                     className={`flex rounded-full px-8 py-4 bg-transparent project-shadow border-2 border-teal-500 cursor-pointer text-white text-lg font-medium my-2`}
@@ -115,12 +116,14 @@ const Nav = ({ setScroll }: Props) => {
                             <a
                                 href='https://www.github.com/JordanOBL'
                                 target='_blank'
+                                aria-label='Click here to visit Jordans Github Profile'
                             >
                                 <SiGithub className='text-orange-400/75 text-4xl md:text-5xl mx-2' />
                             </a>
                             <a
                                 href='https://www.linkedIn.com/in/jwilliams116'
                                 target='_blank'
+                                aria-label='Click here to visit Jordans LinkedIn profile'
                             >
                                 <SiLinkedin className='text-blue-400/75 text-4xl md:text-5xl mx-2' />
                             </a>
@@ -177,6 +180,7 @@ const Nav = ({ setScroll }: Props) => {
                                 target='_blank'
                                 rel='noreferrer'
                                 className='flex items-center'
+                                aria-label='Click here to viewm Jordans resume as a PDF'
                             >
                                 <FaEye className='text-xs mr-2' /> View
                             </a>
@@ -187,6 +191,7 @@ const Nav = ({ setScroll }: Props) => {
                                 download='Jordan_Williams_Resume'
                                 target='_blank'
                                 className='flex items-center'
+                                aria-label='Click here to download Jordans resume'
                             >
                                 <FaDownload className='text-xs mr-2' /> Download
                             </a>
@@ -197,12 +202,17 @@ const Nav = ({ setScroll }: Props) => {
                     <a
                         href='https://www.linkedin.com/in/jwilliams116'
                         target='_blank'
+                        aria-label='Click here to visit Jordans LinkedIn profile'
                     >
                         <SiLinkedin className='text-blue-500 text-2xl' />
                     </a>
                 </li>
                 <li className='p-2'>
-                    <a href='https://www.github.com/JordanOBL' target='_blank'>
+                    <a
+                        href='https://www.github.com/JordanOBL'
+                        target='_blank'
+                        aria-label='Click here to visit jordans Github profile'
+                    >
                         <SiGithub className='text-orange-900 text-2xl' />
                     </a>
                 </li>

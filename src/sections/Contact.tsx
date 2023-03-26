@@ -12,12 +12,17 @@ const Contact = () => {
                 textSize='text-xl md:text-2xl lg:text-3xl'
             />
             <div className='flex px-8 p-4 my-4 lg:my-8 w-fit justify-evenly'>
-                <a href='https://www.github.com/JordanOBL' target='_blank'>
+                <a
+                    href='https://www.github.com/JordanOBL'
+                    target='_blank'
+                    aria-label='Click here to visit jordans Github profile'
+                >
                     <SiGithub className='text-orange-400/75 text-4xl md:text-5xl mx-2' />
                 </a>
                 <a
                     href='https://www.linkedIn.com/in/jwilliams116'
                     target='_blank'
+                    aria-label='Click here to visit Jordans LinkedIn profile'
                 >
                     <SiLinkedin className='text-blue-400/75 text-4xl md:text-5xl mx-2' />
                 </a>
