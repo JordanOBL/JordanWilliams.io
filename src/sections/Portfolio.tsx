@@ -30,17 +30,19 @@ const Portfolio = ({ setScroll }: Props) => {
         if (event.target.localName === 'video') {
             if (index === 0) setSource(event.target.childNodes[0].src);
             if (index === 1) setSource1(event.target.childNodes[0].src);
+            document.querySelectorAll('video').forEach(element => element.load())
         } else {
             if (index === 0) setSource(event.target.src);
             if (index === 1) setSource1(event.target.src);
         }
     };
 
-    React.useEffect(() => {}, [fullPreviewSource]);
 
     const handlePreviewClick = function (e?: any, index?: any): void {
         if (e && index !== undefined) {
-            setFullPreviewSource(e.target.src);
+            setFullPreviewSource(
+                e.target.src || e.target.childNodes[0].src
+            );
             setFullPreviewIndex(index);
             //setScroll(false);
         } else {
@@ -83,7 +85,15 @@ const Portfolio = ({ setScroll }: Props) => {
                             {project
                                 .media![0].split('.')
                                 .includes('webm' || 'mp4') ? (
-                                <video autoPlay loop muted playsInline>
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    onClick={(e) =>
+                                        handlePreviewClick(e, index)
+                                    }
+                                >
                                     <source src={source} type='video/webm' />
                                     <source
                                         src={source.replace('webm', 'mp4')}
@@ -93,8 +103,8 @@ const Portfolio = ({ setScroll }: Props) => {
                             ) : (
                                 <LazyLoadImage
                                     width={'400px'}
-                                        src={index === 0 ? source : source1}
-                                        effect="blur"
+                                    src={index === 0 ? source : source1}
+                                    effect='blur'
                                     onClick={(e) =>
                                         handlePreviewClick(e, index)
                                     }
@@ -169,8 +179,8 @@ const Portfolio = ({ setScroll }: Props) => {
                                         <LazyLoadImage
                                             alt='expanded image'
                                             className='h-[300px] md:h-[400px] lg:h-[500px] max-w-[100%] cursor-pointer'
-                                                src={source}
-                                                effect="blur"
+                                            src={source}
+                                            effect='blur'
                                             onClick={(e) =>
                                                 handlePreviewClick(e, index)
                                             }
@@ -202,8 +212,8 @@ const Portfolio = ({ setScroll }: Props) => {
                                     <LazyLoadImage
                                         alt='expanded image'
                                         className='h-[300px] md:h-[400px] lg:h-[500px] max-w-[100%] cursor-pointer'
-                                                src={source1}
-                                                effect="blur"
+                                        src={source1}
+                                        effect='blur'
                                         onClick={(e) =>
                                             handlePreviewClick(e, index)
                                         }

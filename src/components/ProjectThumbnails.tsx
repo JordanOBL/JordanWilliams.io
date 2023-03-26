@@ -13,6 +13,7 @@ const ProjectThumbnails = ({
             {mediaArray.map((item, idx) =>
                 item.split('.').includes('webm') ? (
                     <video
+                        key={idx}
                         className='cursor-pointer rounded-full border-2 border-teal-600 m-2 w-[50px] h-[50px]'
                         autoPlay
                         loop
@@ -29,7 +30,7 @@ const ProjectThumbnails = ({
                     </video>
                 ) : (
                     <img
-                        key={item}
+                        key={idx}
                         className='cursor-pointer rounded-full border-2 border-teal-600 m-2 w-[50px] h-[50px]'
                         onClick={(event) => handleThumbnailClick(event, index)}
                         src={item}
