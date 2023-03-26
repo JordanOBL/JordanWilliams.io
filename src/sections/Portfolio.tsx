@@ -4,6 +4,8 @@ import FullPreview from '../components/FullPreview';
 import ProjectThumbnails from '../components/ProjectThumbnails';
 
 import radiqlVid1 from '/Radiql/Videos/Radiql1-1.webm';
+import radiqlImg1 from '/Radiql/Images/radiQL_Logo.png';
+
 
 import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.png'
 import TechIcons from '../components/TechIcons';
@@ -12,7 +14,7 @@ interface Props {
 }
 
 const Portfolio = ({ setScroll }: Props) => {
-    const [source, setSource] = React.useState<string>(radiqlVid1);
+    const [source, setSource] = React.useState<string>(radiqlImg1);
     const [source1, setSource1] = React.useState<string>(tDImg10);
     const [fullPreviewSource, setFullPreviewSource] =
         React.useState<string>('');

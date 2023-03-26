@@ -44,7 +44,8 @@ export const projectData: Project[] = [
             'Express',
             'GraphQL',
         ],
-        article: 'http://www.medium.com/radiql',
+        article:
+            'https://medium.com/@rjiang12/radiql-the-one-step-solution-for-setting-up-graphql-on-a-postgres-database-3b622ba2e6ec',
         media: [
             radiqlVid1,
             radiqlVid2,
