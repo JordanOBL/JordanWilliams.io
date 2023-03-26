@@ -24,7 +24,7 @@ const Nav = ({ setScroll }: Props) => {
         setScroll((prev: boolean) => !prev);
     };
     return (
-        <div className='w-screen px-15 lg:px-[5rem] flex bg-slate-800 border-b-2 border-white justify-between items-center sticky top-0 z-20'>
+        <div className='w-screen px-15 lg:pl-[5rem] flex bg-slate-800 border-b-2 border-white justify-between items-center sticky top-0 z-20'>
             <Scroll.Link
                 activeClass='active'
                 to='HOME.'
