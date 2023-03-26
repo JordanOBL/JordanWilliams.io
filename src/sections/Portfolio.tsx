@@ -7,7 +7,7 @@ import radiqlVid1 from '/Radiql/Videos/Radiql1-1.webm';
 import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.webp';
 
 
-import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.png'
+import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.webp'
 import TechIcons from '../components/TechIcons';
 interface Props {
     setScroll: React.Dispatch<React.SetStateAction<boolean>>;
