@@ -33,7 +33,7 @@ const Nav = ({ setScroll }: Props) => {
                 offset={0}
                 duration={1000}
             >
-                <h1 className='w-full text-teal-50 text-3xl md:text-4xl py-3 px-[3rem] cursor-pointer'>
+                <h1 className='w-[300px] text-teal-50 text-3xl md:text-4xl py-3 px-[3rem] cursor-pointer'>
                     Jordan W.
                 </h1>
             </Scroll.Link>
@@ -132,8 +132,8 @@ const Nav = ({ setScroll }: Props) => {
                 </div>
             )}
 
-            <ul className='hidden curspr-pointer lg:flex bg-slate-800 w-[800px] text-center justify-evenly text-white text-xl font-medium items-center'>
-                <li className='text-center hover:text-teal-400 cursor-pointer p-2'>
+            <ul className='hidden curspr-pointer lg:flex bg-slate-800 w-[800px] text-center justify-end pr-[3rem] text-white text-xl font-medium items-center'>
+                <li className='text-center hover:text-teal-400 cursor-pointer py-2 px-4'>
                     <Scroll.Link
                         activeClass='active'
                         to='WORK.'
@@ -145,7 +145,7 @@ const Nav = ({ setScroll }: Props) => {
                         Work
                     </Scroll.Link>
                 </li>
-                <li className='text-center hover:text-teal-400 cursor-pointer p-2'>
+                <li className='text-center hover:text-teal-400 cursor-pointer py-2 px-4'>
                     <Scroll.Link
                         activeClass='active'
                         to='ABOUT.'
@@ -157,7 +157,7 @@ const Nav = ({ setScroll }: Props) => {
                         About
                     </Scroll.Link>
                 </li>
-                <li className='text-center  hover:text-teal-400 cursor-pointer p-2'>
+                <li className='text-center  hover:text-teal-400 cursor-pointer py-2 px-4'>
                     <Scroll.Link
                         activeClass='active'
                         to='CONTACT.'
@@ -169,8 +169,8 @@ const Nav = ({ setScroll }: Props) => {
                         Contact
                     </Scroll.Link>
                 </li>
-                <li className='group relative p-2'>
-                    <p className=' cursor-pointer text-center hover:text-teal-500 p-2'>
+                <li className='group relative py-2 px-4'>
+                    <p className=' cursor-pointer text-center hover:text-teal-500'>
                         Resume
                     </p>
                     <ul className=' absolute bg-slate-800 cursor-pointer group-hover:flex justify-center hidden  flex-col'>
