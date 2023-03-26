@@ -33,7 +33,7 @@ export const projectData: Project[] = [
     {
         title: 'radiQL',
         description: 'GraphQL Migration Aid & Visualizer',
-        website: 'www.google.com',
+        website: 'https://radiql.herokuapp.com',
         github: 'https://github.com/oslabs-beta/radiQL',
         technologies: [
             'TypeScript',
