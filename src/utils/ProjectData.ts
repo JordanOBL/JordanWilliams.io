@@ -1,5 +1,5 @@
-import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.png';
-import radiqlImg2 from '/Radiql/Images/about1.png';
+import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.webp';
+import radiqlImg2 from '/Radiql/Images/about1.webp';
 import radiqlImg3 from '/Radiql/Images/readme-logo.png';
 import radiqlVid1 from '/Radiql/Videos/Radiql1-1.webm';
 import radiqlVid2 from '/Radiql/Videos/Radiql1-2.webm';

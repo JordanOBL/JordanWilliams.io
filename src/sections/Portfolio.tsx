@@ -4,7 +4,7 @@ import FullPreview from '../components/FullPreview';
 import ProjectThumbnails from '../components/ProjectThumbnails';
 
 import radiqlVid1 from '/Radiql/Videos/Radiql1-1.webm';
-import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.png';
+import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.webp';
 
 
 import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.png'
