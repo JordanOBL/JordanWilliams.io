@@ -2,8 +2,6 @@ import * as React from 'react';
 import { projectData, Project } from '../utils/ProjectData';
 import FullPreview from '../components/FullPreview';
 import ProjectThumbnails from '../components/ProjectThumbnails';
-
-import radiqlVid1 from '/Radiql/Videos/Radiql1-1.webm';
 import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.webp';
 
 

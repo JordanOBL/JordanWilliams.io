@@ -58,7 +58,7 @@ const Landing = ({ fullName }: { fullName: { [key: string]: string } }) => {
     return (
         <div className='flex flex-col items-center min-h-screen w-screen bg-slate-800'>
             <div className='portrait-clip '>
-                <img alt='portrait of Jordan' width={'500px'} src={Portrait} />
+                <img alt='portrait of Jordan' width={'500'} src={Portrait} />
             </div>
             <div className='flex flex-col p-2 items-center'>
                 <h1 className='text-white text-4xl md:text-5xl lg:text-6xl tracking-normal lg:mb-3'>
@@ -73,13 +73,6 @@ const Landing = ({ fullName }: { fullName: { [key: string]: string } }) => {
                 </h3>
             </div>
             <ContactButton bg={'bg-teal-400'} textSize='text-md md:text-lg tracking-wide'/>
-
-            {/* <div className='flex justify-center mt-[60px]'>
-                <TbArrowBigDownLinesFilled className='text-5xl md:text-6xl text-teal-200 animate-bounce' />
-            </div> */}
-            {/* <div className='absolute right-5 bottom-5 p-4 rounded-full bg-slate-200 border-4 border-cyan-900'>
-                <TbMail className='text-4xl ' />
-            </div> */}
         </div>
     );
 };
