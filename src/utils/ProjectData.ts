@@ -47,14 +47,14 @@ export const projectData: Project[] = [
         article:
             'https://medium.com/@rjiang12/radiql-the-one-step-solution-for-setting-up-graphql-on-a-postgres-database-3b622ba2e6ec',
         media: [
+            radiqlImg1,
+            radiqlImg2,
+            radiqlImg3,
             radiqlVid1,
             radiqlVid2,
             radiqlVid3,
             radiqlVid4,
             radiqlVid5,
-            radiqlImg1,
-            radiqlImg2,
-            radiqlImg3,
         ],
     },
     {
