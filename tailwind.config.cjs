@@ -4,6 +4,15 @@ const { isWhiteSpaceLike } = require('typescript');
 module.exports = {
     content: ['index.html', './src/**/*.{js,jsx,ts,tsx}'],
     theme: {
+        screens: {
+            sm: '320px',
+            md: '375px',
+            lg: '425px',
+            tablet: '768px',
+            xl: '1024px',
+            xxl: '1440px'
+            
+        },
         extend: {
             keyframes: {
                 cursorBlink: {
@@ -15,7 +24,6 @@ module.exports = {
                     '0%': {
                         opacity: 0,
                     },
-                    
                 },
             },
         },

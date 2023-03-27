@@ -24,7 +24,7 @@ const Nav = ({ setScroll }: Props) => {
         setScroll((prev: boolean) => !prev);
     };
     return (
-        <div className='w-screen px-15 lg:pl-[5rem] flex bg-slate-800 border-b-2 border-white justify-between items-center sticky top-0 z-20'>
+        <div className='w-screen px-0 sm:pl-[1rem] tablet:pl-[3rem] flex bg-slate-800 border-b-2 border-white justify-between items-center sticky top-0 z-20'>
             <Scroll.Link
                 activeClass='active'
                 to='HOME.'
@@ -33,7 +33,7 @@ const Nav = ({ setScroll }: Props) => {
                 offset={0}
                 duration={1000}
             >
-                <h1 className='w-[300px] text-teal-50 text-3xl md:text-4xl py-3 px-[3rem] cursor-pointer'>
+                <h1 className=' w-[200px] md:w-[250px] text-teal-50 text-xl md:text-3xl py-3 px-[2rem] cursor-pointer'>
                     Jordan W.
                 </h1>
             </Scroll.Link>
@@ -41,13 +41,13 @@ const Nav = ({ setScroll }: Props) => {
             {openMenu === false ? (
                 <GiHamburgerMenu
                     onClick={() => handleOpenMenu()}
-                    className=' lg:hidden text-white text-4xl cursor-pointer mr-[3rem]'
+                    className='xl:hidden text-white text-2xl lg:text-4xl cursor-pointer mr-[2rem]'
                 />
             ) : (
-                <div className='border-2 border-white absolute flex w-screen h-screen top-0 text-white font-bold justify-center text-4xl bg-slate-800 flex-col items-center text-center'>
+                <div className='xl:hidden border-2 border-white absolute left-0 flex w-screen h-screen top-0 text-white font-bold justify-center text-2xl tablet:text-4xl bg-slate-800 flex-col items-center text-center'>
                     <CgClose
                         onClick={() => handleCloseMenu()}
-                        className='text-white text-4xl cursor-pointer absolute right-10 top-5'
+                        className='text-white text-2xl tablet:text-4xl cursor-pointer absolute right-10 top-5'
                     />
                     <div onClick={() => handleCloseMenu()}>
                         <Scroll.Link
@@ -99,16 +99,16 @@ const Nav = ({ setScroll }: Props) => {
                                 aria-label='Click here to view Jordans resume as PDF'
                             >
                                 <button
-                                    className={`flex rounded-full px-8 py-4 bg-transparent project-shadow border-2 border-teal-500 cursor-pointer text-white text-lg font-medium my-2`}
+                                    className={`flex rounded-full px-4 py-2 tablet:px-8 tablet:py-4 bg-transparent project-shadow border-2 border-teal-500 cursor-pointer text-white text-lg font-medium my-2`}
                                 >
-                                    <FaEye className='hidden md:block md:text-2xl mr-2' />{' '}
+                                    <FaEye className='hidden lg:block text-2xl mr-2' />{' '}
                                     View Resume (PDF)
                                 </button>
                             </a>
                             <DownloadResumeButton
                                 bg='bg-transparent'
                                 fontSize='medium'
-                                textSize='text-lg md:text-xl'
+                                textSize='text-lg tablet:text-xl'
                                 border='border-2 border-teal-500'
                             />
                         </div>
@@ -118,21 +118,21 @@ const Nav = ({ setScroll }: Props) => {
                                 target='_blank'
                                 aria-label='Click here to visit Jordans Github Profile'
                             >
-                                <SiGithub className='text-orange-400/75 text-4xl md:text-5xl mx-2' />
+                                <SiGithub className='text-orange-400/75 text-3xl lg:text-4xl tablet:text-5xl mx-2' />
                             </a>
                             <a
                                 href='https://www.linkedIn.com/in/jwilliams116'
                                 target='_blank'
                                 aria-label='Click here to visit Jordans LinkedIn profile'
                             >
-                                <SiLinkedin className='text-blue-400/75 text-4xl md:text-5xl mx-2' />
+                                <SiLinkedin className='text-blue-400/75 text-3xl lg:text-4xl tablet:text-5xl mx-2' />
                             </a>
                         </div>
                     </div>
                 </div>
             )}
 
-            <ul className='hidden curspr-pointer lg:flex bg-slate-800 w-[800px] text-center justify-end pr-[3rem] text-white text-xl font-medium items-center'>
+            <ul className='hidden curspr-pointer xl:flex bg-slate-800 w-[800px] text-center justify-end pr-[3rem] text-white text-xl font-medium items-center'>
                 <li className='text-center hover:text-teal-400 cursor-pointer py-2 px-4'>
                     <Scroll.Link
                         activeClass='active'

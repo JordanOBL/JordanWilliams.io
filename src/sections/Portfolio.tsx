@@ -6,8 +6,7 @@ import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.webp';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-
-import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.webp'
+import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.webp';
 import TechIcons from '../components/TechIcons';
 interface Props {
     setScroll: React.Dispatch<React.SetStateAction<boolean>>;
@@ -26,23 +25,22 @@ const Portfolio = ({ setScroll }: Props) => {
         event,
         index: number
     ) {
-        console.log({event, index})
+        console.log({ event, index });
         if (event.target.localName === 'video') {
             if (index === 0) setSource(event.target.childNodes[0].src);
             if (index === 1) setSource1(event.target.childNodes[0].src);
-            document.querySelectorAll('video').forEach(element => element.load())
+            document
+                .querySelectorAll('video')
+                .forEach((element) => element.load());
         } else {
             if (index === 0) setSource(event.target.src);
             if (index === 1) setSource1(event.target.src);
         }
     };
 
-
     const handlePreviewClick = function (e?: any, index?: any): void {
         if (e && index !== undefined) {
-            setFullPreviewSource(
-                e.target.src || e.target.childNodes[0].src
-            );
+            setFullPreviewSource(e.target.src || e.target.childNodes[0].src);
             setFullPreviewIndex(index);
             //setScroll(false);
         } else {
@@ -57,7 +55,7 @@ const Portfolio = ({ setScroll }: Props) => {
             {projectData.map((project: Project, index: number) => (
                 <div
                     key={index}
-                    className='p-8 md:p-14 lg:p-20 grid grid-cols-1 xl:grid-cols-[_1fr_1fr] min-h-screen w-screen place-items-center even:text-white odd:text-slate-800 even:bg-slate-800 odd:bg-slate-50'
+                    className='p-8 tablet:p-14 xl:p-20 grid grid-cols-1 xl:grid-cols-[_1fr_1fr] min-h-screen w-screen place-items-center even:text-white odd:text-slate-800 even:bg-slate-800 odd:bg-slate-50'
                 >
                     {fullPreviewSource && index === fullPreviewIndex && (
                         <FullPreview
@@ -67,7 +65,7 @@ const Portfolio = ({ setScroll }: Props) => {
                     )}
 
                     <article>
-                        <h2 className='text-5xl md:text-5xl lg:text-6xl text-center my-4'>
+                        <h2 className='text-3xl md:text-5xl tablet:text-6xl text-center my-4'>
                             {project.title}
                         </h2>
                         <h3 className='text-xl text-center font-medium'>
@@ -81,7 +79,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                 }
                             />
                         </div>
-                        <div className=' flex place-content-center my-10 md:hidden'>
+                        <div className=' flex place-content-center my-10 tablet:hidden'>
                             {project
                                 .media![0].split('.')
                                 .includes('webm' || 'mp4') ? (
@@ -102,7 +100,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                 </video>
                             ) : (
                                 <LazyLoadImage
-                                        width={'350px'}
+                                    min-width={'200px'}
                                     src={index === 0 ? source : source1}
                                     effect='blur'
                                     onClick={(e) =>
@@ -111,8 +109,8 @@ const Portfolio = ({ setScroll }: Props) => {
                                 />
                             )}
                         </div>
-                        <div className='flex flex-col md:flex-row flex-wrap w-full place-content-center my-2 lg:my-12 text-2xl lg:text-3xl '>
-                            <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium w-[200px] md:w-fit px-6 py-2 rounded-2xl'>
+                        <div className='flex flex-col items-center tablet:flex-row flex-wrap w-full place-content-center my-2 tablet:my-12 text-2xl tablet:text-3xl '>
+                            <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium w-[200px] xl:w-fit px-6 py-2 rounded-2xl'>
                                 <a
                                     href={project.github}
                                     target='_blank'
@@ -121,7 +119,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                     GitHub
                                 </a>
                             </button>
-                            <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium w-[200px] md:w-fit px-6 py-2 rounded-2xl'>
+                            <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium w-[200px] xl:w-fit px-6 py-2 rounded-2xl'>
                                 <a
                                     href={project.website}
                                     target='_blank'
@@ -131,7 +129,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                 </a>
                             </button>
                             {project.article && (
-                                <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium  w-[200px] md:w-fit px-6 py-2 rounded-2xl'>
+                                <button className='m-2 project-shadow hover:project-hovershadow text-center bg-teal-400 hover:bg-teal-300 text-slate-800 font-medium  w-[200px] xl:w-fit px-6 py-2 rounded-2xl'>
                                     <a
                                         href={project.article}
                                         target='_blank'
@@ -144,7 +142,7 @@ const Portfolio = ({ setScroll }: Props) => {
                         </div>
                     </article>
 
-                    <div className='hidden md:flex flex-col place-items-center '>
+                    <div className='hidden tablet:flex flex-col place-items-center '>
                         <div
                             className={`flex justify-center h-[300px] md:h-[400px] lg:h-[500px] w-fit p-4`}
                         >
@@ -154,7 +152,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                         .split('.')
                                         .includes('webm' || 'mp4') ? (
                                         <video
-                                            className='h-[300px] md:h-[400px] lg:h-[500px] max-w-[100%] cursor-pointer'
+                                            className='h-[300px] tablet:h-[400px] xl:h-[500px] max-w-[100%] cursor-pointer'
                                             onClick={(e) =>
                                                 handlePreviewClick(e, index)
                                             }
@@ -178,7 +176,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                     ) : (
                                         <LazyLoadImage
                                             alt='expanded image'
-                                            className='h-[300px] md:h-[400px] lg:h-[500px] max-w-[100%] cursor-pointer'
+                                            className='h-[300px] tablet:h-[400px] xl:h-[500px] max-w-[100%] cursor-pointer'
                                             src={source}
                                             effect='blur'
                                             onClick={(e) =>
@@ -190,7 +188,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                       .split('.')
                                       .includes('webm' || 'mp4') ? (
                                     <video
-                                        className='h-[300px] md:h-[400px] lg:h-[500px] max-w-[100%] cursor-pointer'
+                                        className='max-h-[300px] tablet:max-h-[400px] xl:max-h-[500px] max-w-[100%] cursor-pointer'
                                         onClick={(e) =>
                                             handlePreviewClick(e, index)
                                         }
@@ -211,7 +209,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                 ) : (
                                     <LazyLoadImage
                                         alt='expanded image'
-                                        className='h-[300px] md:h-[400px] lg:h-[500px] max-w-[100%] cursor-pointer'
+                                        className='max-h-[300px] tablet:max-h-[400px] xl:max-h-[500px] max-w-[100%] cursor-pointer'
                                         src={source1}
                                         effect='blur'
                                         onClick={(e) =>

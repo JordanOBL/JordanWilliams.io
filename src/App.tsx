@@ -26,7 +26,7 @@ function App() {
         : (body.style.overflow = 'hidden');
 
     return (
-        <main className='bg-slate-50'>
+        <main className='bg-slate-50 w-screen'>
             <Nav setScroll={setScroll} />
             <Element name='HOME.'>
                 <Landing fullName={fullName} />

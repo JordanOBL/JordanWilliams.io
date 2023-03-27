@@ -9,7 +9,7 @@ const Contact = () => {
             </h2>
             <ContactButton
                 bg='bg-teal-500'
-                textSize='text-xl md:text-2xl lg:text-3xl'
+                textSize='text-xl tablet:text-2xl xl:text-3xl'
             />
             <div className='flex px-8 p-4 my-4 lg:my-8 w-fit justify-evenly'>
                 <a
