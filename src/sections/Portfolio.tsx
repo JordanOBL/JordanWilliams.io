@@ -102,7 +102,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                 </video>
                             ) : (
                                 <LazyLoadImage
-                                    width={'400px'}
+                                        width={'350px'}
                                     src={index === 0 ? source : source1}
                                     effect='blur'
                                     onClick={(e) =>
