@@ -1,4 +1,4 @@
-import ResumePDF from '/Resume.pdf';
+import ResumePDF from '/Jordan_Williams_Resume_Full_Stack_Developer.pdf';
 interface Props {
     bg: string;
     textSize?: string;

@@ -4,7 +4,7 @@ import { CgClose } from 'react-icons/cg';
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import { FaDownload, FaEye } from 'react-icons/fa';
 import DownloadResumeButton from './DownloadResumeButton';
-import ResumePDF from '/Resume.pdf';
+import ResumePDF from '/Jordan_Williams_Resume_Full_Stack_Developer.pdf';
 //react-scroll
 import * as Scroll from 'react-scroll';
 

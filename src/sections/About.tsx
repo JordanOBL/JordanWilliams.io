@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ResumePDF from '/Resume.pdf';
+import ResumePDF from '/Jordan_Williams_Resume_Full_Stack_Developer.pdf';
 import { nounList } from '../utils/ProjectData';
 import { skills } from '../utils/ResumeData';
 import { FaEye, FaFileDownload } from 'react-icons/fa';
