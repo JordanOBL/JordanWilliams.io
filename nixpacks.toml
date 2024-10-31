@@ -1,0 +1,6 @@
+[phases.build]
+nixpkgs = ["nodejs-18_x", "npm"]
+build = "npm i && npm run build"
+
+[phases.start]
+cmd = "npx serve -s dist -l ${PORT}"
