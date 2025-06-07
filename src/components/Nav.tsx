@@ -4,7 +4,7 @@ import { CgClose } from 'react-icons/cg';
 import { SiLinkedin, SiGithub } from 'react-icons/si';
 import { FaDownload, FaEye } from 'react-icons/fa';
 import DownloadResumeButton from './DownloadResumeButton';
-import ResumePDF from '/Jordan_Williams_Resume_Full_Stack_Developer.pdf';
+import ResumePDF from '/Jordan_Williams_Resume_2025.docx.pdf';
 //react-scroll
 import * as Scroll from 'react-scroll';
 
@@ -121,7 +121,7 @@ const Nav = ({ setScroll }: Props) => {
                                 <SiGithub className='text-orange-400/75 text-3xl lg:text-4xl tablet:text-5xl mx-2' />
                             </a>
                             <a
-                                href='https://www.linkedIn.com/in/jwilliams116'
+                                href='https://www.linkedIn.com/in/jordanwilliamsio'
                                 target='_blank'
                                 aria-label='Click here to visit Jordans LinkedIn profile'
                             >
@@ -200,7 +200,7 @@ const Nav = ({ setScroll }: Props) => {
                 </li>
                 <li className='p-2'>
                     <a
-                        href='https://www.linkedin.com/in/jwilliams116'
+                        href='https://www.linkedin.com/in/jordanwilliamsio'
                         target='_blank'
                         aria-label='Click here to visit Jordans LinkedIn profile'
                     >

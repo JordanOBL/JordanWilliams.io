@@ -1,4 +1,4 @@
-import ResumePDF from '/Jordan_Williams_Resume_Full_Stack_Developer.pdf';
+import ResumePDF from '/Jordan_Williams_Resume_2025.docx.pdf';
 interface Props {
     bg: string;
     textSize?: string;

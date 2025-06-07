@@ -3,7 +3,7 @@ interface Props {
     textSize: string;
 }
 const ContactButton = ({ bg, textSize }: Props) => {
-    const myEmail: string = 'Jwysong116@gmail.com';
+    const myEmail: string = 'JordanWilliams.dev@gmail.com';
     const handleEmailClick = (): void => {
         const subject: string = 'Contact From Portfolio';
         const mailtoLink: string = `mailto:${myEmail}?subject=${subject}`;

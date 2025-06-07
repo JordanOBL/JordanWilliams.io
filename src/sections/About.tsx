@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ResumePDF from '/Jordan_Williams_Resume_Full_Stack_Developer.pdf';
+import ResumePDF from '/Jordan_Williams_Resume_2025.docx.pdf';
 import { nounList } from '../utils/ProjectData';
 import { skills } from '../utils/ResumeData';
 import { FaEye, FaFileDownload } from 'react-icons/fa';
@@ -145,25 +145,26 @@ const About = () => {
                 <h3 className='h3-about text-slate-800 tablet:text-xl'>
                     <span className=' underline tracking-wide'>radiQL</span> |
                     Software Engineer - Visual GraphQL migration aid | Open
-                    Source | 2022
+                    Source 
                 </h3>{' '}
                 <h3 className='h3-about text-slate-800 tablet:text-xl'>
                     <span className=' underline tracking-wide'>
-                        TwinsDimension.com
-                    </span>{' '}
-                    | Full-Stack Engineer - Ecommerce | Freelance | November
-                    2021
+                        EastWest Solutions                    </span>{' '}
+                    | Full-Stack Engineer - Business Consulting
                 </h3>
             </article>
             <article className='flex  flex-col items-center p-8 tablet:p-12'>
                 <h2 className='text-2xl tablet:text-3xl mb-4 text-teal-800'>
                     Education
                 </h2>
+                 <h3 className='h3-about text-slate-800 tablet:text-xl'>
+                     Western Governers University | B.S Computer Science
+                </h3>
                 <h3 className='h3-about text-slate-800 tablet:text-xl'>
                     Codesmith | Software Engineering
                 </h3>
                 <h3 className='h3-about text-slate-800 tablet:text-xl'>
-                    ITT Technical Institute | Design/ Visual Communication
+                    ITT Technical Institute | Design / Visual Communication
                 </h3>
             </article>
             <article

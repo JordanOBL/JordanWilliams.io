@@ -6,17 +6,24 @@ import radiqlVid2 from '/Radiql/Videos/Radiql1-2.webm';
 import radiqlVid3 from '/Radiql/Videos/Radiql1-3.webm';
 import radiqlVid4 from '/Radiql/Videos/Radiql1-4.webm';
 import radiqlVid5 from '/Radiql/Videos/Radiql1-5.webm';
-import tDImg1 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.webp';
-import tDImg2 from '/TwinsDimension/Images/Screen Shot 2023-03-19 at 2.03.05 AM.webp';
-import tDImg3 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.49.49 PM.webp';
-import tDImg4 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.50.15 PM.webp';
-import tDImg5 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.52.21 PM.webp';
-import tDImg6 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.52.42 PM.webp';
-import tDImg7 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.53.39 PM.webp';
-import tDImg8 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.53.52 PM.webp';
-import tDImg9 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.54.09 PM.webp';
-import tDImg10 from '/TwinsDimension/Images/Screen Shot 2023-03-18 at 8.55.02 PM.webp';
-import tDImg11 from '/TwinsDimension/Images/Screen Shot 2023-03-19 at 2.04.07 AM.webp';
+import ttlogo from '/TrailTasks/logo.png';
+import tt0 from '/TrailTasks/bg.png';
+import tt1 from '/TrailTasks/1.jpg';
+import tt2 from '/TrailTasks/2.jpg';
+import tt3 from '/TrailTasks/3.jpg';
+import tt4 from '/TrailTasks/4.jpg';
+import tt5 from '/TrailTasks/5.jpg';
+import tt6 from '/TrailTasks/6.jpg';
+import tt7 from '/TrailTasks/7.jpg';
+import tt8 from '/TrailTasks/8.jpg';
+import tt9 from '/TrailTasks/9.jpg';
+import tt10 from '/TrailTasks/10.jpg';
+import tt11 from '/TrailTasks/11.jpg';
+import tt12 from '/TrailTasks/12.jpg';
+import tt13 from '/TrailTasks/13.jpg';
+import tt14 from '/TrailTasks/14.jpg';
+
+import ew1 from '/EastWestSolutions/bg.png';
 
 export interface Project {
     title: string;
@@ -30,6 +37,41 @@ export interface Project {
 }
 
 export const projectData: Project[] = [
+    {
+        title: 'Trail Tasks',
+        description: 'Trail Tasks App transforms your daily productivity into a rewarding virtual hiking adventure of all 63 National Parks using the proven Pomodoro technique',
+        website: 'https://trailtasks.app',
+        github: 'https://github.com/JordanOBL',
+        technologies: [
+            'React',
+            'Android',
+            'iOS',
+            'TypeScript',
+            'Go',
+            'SQLite',
+            'Postgres',
+            'Node',
+        ],
+        media: [
+            ttlogo,
+            tt0,
+            tt1,
+            tt2,
+            tt3,
+            tt4,
+            tt5,
+            tt6,
+            tt7,
+            tt8,
+            tt9,
+            tt10,
+            tt11,
+            tt12,
+            tt13,
+            tt14,
+            
+        ],
+    },
     {
         title: 'radiQL',
         description: 'GraphQL Migration Aid & Visualizer',
@@ -58,34 +100,21 @@ export const projectData: Project[] = [
         ],
     },
     {
-        title: 'Twins Dimension',
-        description: 'E-Commerce - Custom 3-D Printed Collectables',
-        website: 'https://twinsdimension.herokuapp.com',
+        title: 'EastWest Solutions',
+        description: 'Strategic consulting for business, leadership, and career growth.',
+        website: 'https://eastwestsolutions.us',
         technologies: [
             'TypeScript',
             'React',
+            'NextJS',
             'TailwindCSS',
-            'Redux',
-            'MongoDB',
             'Stripe',
-            'Paypal',
-            'Node',
-            'Express',
         ],
-        github: 'https://github.com/JordanOBL/RyansCollectables',
+        github: 'https://github.com/JordanOBL',
         media: [
-            tDImg1,
-            tDImg2,
-            tDImg3,
-            tDImg4,
-            tDImg5,
-            tDImg6,
-            tDImg7,
-            tDImg8,
-            tDImg9,
-            tDImg10,
-            tDImg11,
+            ew1, 
         ],
+      
     },
 ];
 

@@ -2,19 +2,20 @@ import * as React from 'react';
 import { projectData, Project } from '../utils/ProjectData';
 import FullPreview from '../components/FullPreview';
 import ProjectThumbnails from '../components/ProjectThumbnails';
-import radiqlImg1 from '/Radiql/Images/radiQL_Logo2.webp';
+import radiqlImg1 from '../../public/Radiql/Images/radiQL_Logo2.webp';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
-import tDImg10 from '../../public/TwinsDimension/Images/Screen Shot 2023-03-18 at 9.55.19 PM.webp';
+import ews from '../../public/EastWestSolutions/bg.png';
+import tt0 from '../../public/TrailTasks/logo.png';
 import TechIcons from '../components/TechIcons';
 interface Props {
     setScroll: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Portfolio = ({ setScroll }: Props) => {
-    const [source, setSource] = React.useState<string>(radiqlImg1);
-    const [source1, setSource1] = React.useState<string>(tDImg10);
+    const [source1, setSource1] = React.useState<string>(radiqlImg1);
+    const [source, setSource] = React.useState<string>(tt0);
+    const [source2, setSource2] = React.useState<string>(ews);
     const [fullPreviewSource, setFullPreviewSource] =
         React.useState<string>('');
     const [fullPreviewIndex, setFullPreviewIndex] = React.useState<
@@ -100,8 +101,8 @@ const Portfolio = ({ setScroll }: Props) => {
                                 </video>
                             ) : (
                                 <LazyLoadImage
-                                    min-width={'200px'}
-                                    src={index === 0 ? source : source1}
+                                    max-width={'200px'}
+                                    src={index === 0 ? source : index === 1 ? source1 : source2}
                                     effect='blur'
                                     onClick={(e) =>
                                         handlePreviewClick(e, index)
@@ -176,7 +177,7 @@ const Portfolio = ({ setScroll }: Props) => {
                                     ) : (
                                         <LazyLoadImage
                                             alt='expanded image'
-                                            className='h-[300px] tablet:h-[400px] xl:h-[500px] max-w-[100%] cursor-pointer'
+                                            className='h-[200px] tablet:h-[300px] xl:h-[400px] max-w-[100%] cursor-pointer'
                                             src={source}
                                             effect='blur'
                                             onClick={(e) =>
@@ -184,7 +185,8 @@ const Portfolio = ({ setScroll }: Props) => {
                                             }
                                         />
                                     )
-                                ) : source1
+                                ) : index === 1 ? (
+                                    source1
                                       .split('.')
                                       .includes('webm' || 'mp4') ? (
                                     <video
@@ -206,11 +208,22 @@ const Portfolio = ({ setScroll }: Props) => {
                                             type='video/mp4'
                                         />
                                     </video>
+                                ): (
+                                    <LazyLoadImage
+                                        alt='expanded image'
+                                        className='max-h-[200px] tablet:max-h-[300px] xl:max-h-[400px] max-w-[100%] cursor-pointer'
+                                        src={source1}
+                                        effect='blur'
+                                        onClick={(e) =>
+                                            handlePreviewClick(e, index)
+                                        }
+                                    />
+                                )
                                 ) : (
                                     <LazyLoadImage
                                         alt='expanded image'
-                                        className='max-h-[300px] tablet:max-h-[400px] xl:max-h-[500px] max-w-[100%] cursor-pointer'
-                                        src={source1}
+                                        className='max-h-[200px] tablet:max-h-[300px] xl:max-h-[400px] max-w-[100%] cursor-pointer'
+                                        src={source2}
                                         effect='blur'
                                         onClick={(e) =>
                                             handlePreviewClick(e, index)

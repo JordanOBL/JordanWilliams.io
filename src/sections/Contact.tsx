@@ -20,7 +20,7 @@ const Contact = () => {
                     <SiGithub className='text-orange-400/75 text-4xl md:text-5xl mx-2' />
                 </a>
                 <a
-                    href='https://www.linkedIn.com/in/jwilliams116'
+                    href='https://www.linkedIn.com/in/jordanwilliamsio'
                     target='_blank'
                     aria-label='Click here to visit Jordans LinkedIn profile'
                 >
